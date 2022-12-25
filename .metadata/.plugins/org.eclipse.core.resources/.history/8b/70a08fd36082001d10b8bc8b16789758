@@ -1,0 +1,21 @@
+package br.com.calculadora.mateus.projetopessoal;
+
+import javax.swing.JFrame;
+import javax.swing.UIManager;
+
+public class FrameCalc extends JFrame {
+	public FrameCalc() throws Exception {
+		super("Calculadora");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(400, 300);
+		setLocation(300, 300);
+		
+		setVisible(true);
+	}
+
+	public static void main(String[] args) throws Exception {
+		new FrameCalc();
+	}
+	
+	
+}

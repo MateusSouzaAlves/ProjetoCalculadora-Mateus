@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\mateu\Desktop\Programação\ProjetoCalc\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1650449417.index
+1637731351.index

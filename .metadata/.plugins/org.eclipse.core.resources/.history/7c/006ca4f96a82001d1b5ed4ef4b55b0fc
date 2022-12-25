@@ -1,0 +1,17 @@
+package br.com.calculadora.mateus.projetopessoal;
+
+import java.awt.GridLayout;
+
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class OperationsPanel extends JPanel {
+
+	private JTextField text;
+
+	public OperationsPanel(JTextField text) {
+		this.text = text;
+		
+		setLayout(new GridLayout(3,2));
+	}
+}

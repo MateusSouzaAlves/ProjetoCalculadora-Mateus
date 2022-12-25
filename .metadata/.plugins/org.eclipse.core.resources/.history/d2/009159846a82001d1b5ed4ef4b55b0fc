@@ -1,0 +1,48 @@
+package br.com.calculadora.mateus.projetopessoal;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+
+//Classe do Frame (Criação da janela)
+
+public class FrameCalc extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public FrameCalc() throws Exception {
+		super("Calculadora");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(350, 450);
+		setLocation(300, 300);
+		setLayout(new BorderLayout());
+		
+		TextPanel textpanel = new TextPanel();
+		add(BorderLayout.NORTH, textpanel);
+		
+		JPanel writerNumber = new JPanel();
+		writerNumber.setLayout(new BorderLayout());
+		writerNumber.add(BorderLayout.CENTER, new NumberPanel(textpanel.getNumber()));
+		writerNumber.add(BorderLayout.EAST, new OperationsPanel(textpanel.getNumber()));
+		
+		add(BorderLayout.CENTER, writerNumber);
+		
+		setVisible(true);
+	}
+
+	public static void main(String[] args) throws Exception {
+		new FrameCalc();
+		try{
+		    UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel");// faz parecer a app mais portatil "mais nativo da plataforma"
+		    // ou escreva o full qualifyed name do lookAndFeel no parametro setlookAndFeel coloque "javax.swing.plaf.nimbus.NimbusLookAndFeel" com aspas e vai activar o laf nimbus
+		}catch(Exception e){
+		     e.printStackTrace(); 
+		}
+	}
+	
+	
+}

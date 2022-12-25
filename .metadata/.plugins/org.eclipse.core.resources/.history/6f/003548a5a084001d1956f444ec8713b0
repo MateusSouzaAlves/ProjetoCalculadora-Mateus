@@ -1,0 +1,27 @@
+package br.com.calculadora.mateus.projetopessoal;
+
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class OperationsPanel extends JPanel {
+
+	private JTextField text;
+	//Botões como atributos para verificar no método que vai fazer o teste dos eventos 
+	//qual botão foi apertado
+	private JButton btnAdd;
+	private JButton btnSub;
+	private JButton btnMult;
+	private JButton btnDiv;
+	private JButton btnEq;
+	private JButton btnClear;
+
+
+	public OperationsPanel(JTextField text) {
+		this.text = text;
+		
+		setLayout(new GridLayout(3,2));
+	}
+}

@@ -1,0 +1,7 @@
+package br.com.calculadora.mateus.projetopessoal;
+
+import javax.swing.JPanel;
+
+public class NumberPanel extends JPanel{
+
+}

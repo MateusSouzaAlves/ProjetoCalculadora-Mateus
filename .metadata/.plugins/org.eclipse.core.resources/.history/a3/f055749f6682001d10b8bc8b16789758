@@ -1,0 +1,26 @@
+package br.com.calculadora.mateus.projetopessoal;
+
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class NumberPanel extends JPanel {
+
+	private JTextField text;
+
+	// Possibilitando que os métodos de evento de clique possam acessar esse texto e
+	// fazer alterações no texto da caixa.
+	
+	public NumberPanel(JTextField text) {
+		this.text = text;
+		
+		setLayout(new GridLayout(4,3));
+		
+		JButton btn1 = new JButton("1");
+		add(btn1);
+	}
+	
+	
+}

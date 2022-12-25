@@ -1,0 +1,38 @@
+package br.com.calculadora.mateus.projetopessoal;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+//Classe para criação do layout(Painel)
+public class TextPanel extends JPanel {
+	
+	
+	/**
+		 * 
+		 */
+	private static final long serialVersionUID = 1L;
+	
+	
+	private JTextField Number;
+
+	public TextPanel() {
+		setLayout(new FlowLayout());
+		
+		Number = new JTextField(15);
+		//setSize(80, 20);
+		Number.setHorizontalAlignment(JTextField.RIGHT);
+		Number.setEnabled(false);
+		add(Number);
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	public JTextField getNumber() {
+		return Number;
+	}
+	
+	
+}

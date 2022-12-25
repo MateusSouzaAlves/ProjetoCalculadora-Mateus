@@ -1,0 +1,16 @@
+package br.com.calculadora.mateus.projetopessoal;
+
+import javax.swing.JFrame;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
+public class FrameCalc extends JFrame {
+	public FrameCalc() throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
+		super("Calculadora");
+		UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+	}
+
+	public static void main(String[] args) throws Exception {
+		new FrameCalc();
+	}
+}

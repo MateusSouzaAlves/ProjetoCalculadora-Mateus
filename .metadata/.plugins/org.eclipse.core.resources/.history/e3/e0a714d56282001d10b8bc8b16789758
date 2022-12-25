@@ -1,0 +1,29 @@
+package br.com.calculadora.mateus.projetopessoal;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+//Classe do Frame (Criação da janela)
+public class FrameCalc extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public FrameCalc() throws Exception {
+		super("Calculadora");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(400, 300);
+		setLocation(300, 300);
+		
+		setLayout(new BorderLayout());
+		
+		setVisible(true);
+	}
+
+	public static void main(String[] args) throws Exception {
+		new FrameCalc();
+	}
+	
+	
+}

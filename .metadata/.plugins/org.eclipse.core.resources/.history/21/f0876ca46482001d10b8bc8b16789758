@@ -1,0 +1,9 @@
+package br.com.calculadora.mateus.projetopessoal;
+
+import javax.swing.JPanel;
+
+public class OperationsPanel extends JPanel {
+	public OperationsPanel() {
+
+	}
+}
