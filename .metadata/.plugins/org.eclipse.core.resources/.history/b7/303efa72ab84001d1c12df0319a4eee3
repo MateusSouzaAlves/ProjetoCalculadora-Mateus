@@ -38,7 +38,7 @@ public class OperationsPanel extends JPanel implements ActionListener {
 		add(btnAdd);// Adicionando o botão
 
 		btnSub = new JButton("-");
-		btnSub.addActionListener(this);
+		btnAdd.addActionListener(this);
 		add(btnSub);
 
 		btnMult = new JButton("x");
